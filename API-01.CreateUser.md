@@ -1,4 +1,5 @@
 [Screen Shot 2021-02-03 at 12.54.07 PM.png](https://trello-attachments.s3.amazonaws.com/6012ec6cd7a49a3ff40475f0/6012ec6dd7a49a3ff4047738/2a6c923ad5227c5ce89c657440e07081/Screen_Shot_2021-02-03_at_12.54.07_PM.png) 
+```js
 
 // Pre-request script
 const email = pm.variables.replaceIn("{{$randomEmail}}");
@@ -28,3 +29,7 @@ pm.test("B. Message : User ID Ok", function() {
     console.log(body)
     pm.environment.set("id", Number(body.message))
 });
+
+
+```
+
